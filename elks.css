@@ -52,7 +52,7 @@ body::before {
     left: 0;
     height: 100%;
     width: 100%;
-    mask-image: url(herringbone.svg);
+    mask-image: url(https://thereisnocake27.github.io/herringbone.svg);
     mask-size: 80em;
     background-color: rgba(var(--swatch-body), 1);
     z-index: -1;
@@ -89,7 +89,7 @@ header a {
     height: 100%;
     aspect-ratio: 1;
     z-index: 1;
-    mask-image: url("elks-club.svg");
+    mask-image: url("https://thereisnocake27.github.io/elks-club.svg");
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -346,7 +346,7 @@ a.open#close-menu {
     align-self: center;
     aspect-ratio: 1;
     z-index: 1;
-    mask-image: url("elks-club.svg");
+    mask-image: url("https://thereisnocake27.github.io/elks-club.svg");
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -468,7 +468,7 @@ a.open#close-menu {
     height: calc(var(--side-bar-item-height) * 2);
     width: calc(var(--side-bar-item-height) * 2);
     max-width: 24vw;
-    mask-image: url('placeholdericon.svg');
+    mask-image: url('https://thereisnocake27.github.io/placeholdericon.svg');
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
