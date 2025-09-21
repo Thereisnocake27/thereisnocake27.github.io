@@ -52,7 +52,7 @@ body::before {
     left: 0;
     height: 100%;
     width: 100%;
-    mask-image: url(https://thereisnocake27.github.io/herringbone.svg);
+    mask-image: url(herringbone.svg);
     mask-size: 80em;
     background-color: rgba(var(--swatch-body), 1);
     z-index: -1;
@@ -89,7 +89,7 @@ header a {
     height: 100%;
     aspect-ratio: 1;
     z-index: 1;
-    mask-image: url("https://thereisnocake27.github.io/elks-club.svg");
+    mask-image: url("elks-club.svg");
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -110,6 +110,7 @@ header a:hover {
     padding: 0 var(--top-bar-height) 0 /0;
     box-sizing:border-box;
     z-index: 5;
+    display: flex;
 }
 
 #top-bar > ul {
@@ -247,21 +248,32 @@ button#open-menu {
     background-color: rgb(var(--swatch-secondary));
     height: 100%;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-#top-bar ul > li.menu-btn {
+#top-bar div.menu-btn {
     flex-grow: 0;
     width: var(--top-bar-height);
     display: none;
+    position: relative;
 }
 
-#top-bar ul >li.menu-btn::before {
+#top-bar div.menu-btn::before {
+    content: "";
     background-color:rgb(var(--swatch-difference));
     width: 0;
     height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.1s ease-out 0.05s;
 }
 
-#top-bar ul >li.menu-btn:hover::before {
+#top-bar div.menu-btn:hover::before {
     width: 100%;
 }
 
@@ -283,6 +295,7 @@ button#open-menu::before {
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: rgb(var(--swatch-text));
+    z-index: 2;
 }
 
 #side-bar {
@@ -346,7 +359,7 @@ a.open#close-menu {
     align-self: center;
     aspect-ratio: 1;
     z-index: 1;
-    mask-image: url("https://thereisnocake27.github.io/elks-club.svg");
+    mask-image: url("elks-club.svg");
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -468,7 +481,7 @@ a.open#close-menu {
     height: calc(var(--side-bar-item-height) * 2);
     width: calc(var(--side-bar-item-height) * 2);
     max-width: 24vw;
-    mask-image: url('https://thereisnocake27.github.io/placeholdericon.svg');
+    mask-image: url('placeholdericon.svg');
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -537,7 +550,7 @@ a.open#close-menu {
         grid-template-columns: 1fr 0 auto 1fr;
     }
 
-    #top-bar > ul > li.menu-btn {
+    #top-bar div.menu-btn {
         display: flex;
     }
 
