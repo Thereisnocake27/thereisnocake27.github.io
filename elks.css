@@ -316,6 +316,7 @@ button#open-menu::before {
     grid-area: side-bar;
     max-width: 80vw;
     height: max-content;
+    overflow-y: scroll;
 }
 
 .open#side-bar {
@@ -598,11 +599,5 @@ a.open#close-menu {
 @media (max-width: 500px) {
     :root {
         --body-font-size: 1.4rem;
-    }
-}
-
-@media (max-height: 600px) {
-    #side-bar {
-        overflow-y: scroll;
     }
 }
