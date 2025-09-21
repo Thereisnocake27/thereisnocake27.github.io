@@ -589,7 +589,7 @@ a.open#close-menu {
         font-size: 120%;
     }
     #top-bar {
-        min-height: 4vh;
+        min-height: 6vh;
     }
 }
 
