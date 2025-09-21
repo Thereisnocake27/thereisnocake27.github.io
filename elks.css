@@ -39,7 +39,6 @@ body, html {
 
 body {
     background-color: rgb(var(--swatch-body-variant));
-    scrollbar-width: thin;
     font-family: var(--font-body), Arial, Helvetica, sans-serif;
     color: rgb(var(--swatch-text));
     font-size: var(--body-font-size);
@@ -318,6 +317,7 @@ button#open-menu::before {
     height: max-content;
     overflow-y: scroll;
     scrollbar-color: rgb(var(--swatch-primary)) rgb(var(--swatch-body));
+    scrollbar-width: thin;
 }
 
 .open#side-bar {
