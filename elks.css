@@ -256,7 +256,8 @@ button#open-menu {
 
 #top-bar div.menu-btn {
     flex-grow: 0;
-    width: var(--top-bar-height);
+    height: 100%;
+    aspect-ratio: 1;
     display: none;
     position: relative;
 }
@@ -584,9 +585,11 @@ a.open#close-menu {
         --top-bar-height: max(3em, 4vh);
         --body-font-size: 1.2rem;
     }
-
     #top-bar > ul > li {
         font-size: 100%;
+    }
+    #top-bar {
+        min-height: 4vh;
     }
 }
 
