@@ -305,7 +305,7 @@ button#open-menu::before {
     width: 18em;
     min-width: 18em;
     background-color: rgb(var(--swatch-body));
-    z-index: 10;
+    z-index: 4;
     transition: clip-path 0.15s ease-in;
     max-height: 80vh;
     grid-area: side-bar;
@@ -540,6 +540,7 @@ a.open#close-menu {
         max-width: 80vw;
         max-height: 100lvh;
         width: 24em;
+        z-index: 11;
     }
 
     #side-bar-header {
