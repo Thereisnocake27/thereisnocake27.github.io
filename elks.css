@@ -544,11 +544,14 @@ a.open#close-menu {
         position: fixed;
         top: 0;
         left: 0;
+        height: 100vh;
         height: 100lvh;
         max-width: 80vw;
+        max-height: 100vh;
         max-height: 100lvh;
         width: 24em;
         z-index: 11;
+        padding-bottom: 2em;
     }
 
     #side-bar-header {
