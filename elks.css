@@ -58,6 +58,11 @@ body::before {
     z-index: -1;
 }
 
+::selection, ::-webkit-selection {
+    background-color: rgb(var(--swatch-secondary));
+    color: rgb(var(--swatch-text));
+}
+
 
 #body-wrap {
     min-height: 100%;
