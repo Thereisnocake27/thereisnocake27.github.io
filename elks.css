@@ -600,3 +600,9 @@ a.open#close-menu {
         --body-font-size: 1.4rem;
     }
 }
+
+@media (max-width: 390px) {
+    #top-bar > ul > li {
+        font-size: 80%;
+    }
+}
