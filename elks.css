@@ -307,7 +307,6 @@ button#open-menu::before {
     top: var(--top-bar-height);
     left: 0;
     width: 18em;
-    min-width: 18em;
     background-color: rgb(var(--swatch-body));
     z-index: 4;
     transition: clip-path 0.15s ease-in;
@@ -318,6 +317,7 @@ button#open-menu::before {
     overflow-y: scroll;
     scrollbar-color: rgb(var(--swatch-primary)) rgb(var(--swatch-body));
     scrollbar-width: thin;
+    padding-right: 0.5em
 }
 
 .open#side-bar {
@@ -425,7 +425,7 @@ a.open#close-menu {
 }
 
 #side-bar > ul > li {
-    height: var(--side-bar-item-height);
+    min-height: var(--side-bar-item-height);
     background-color: rgb(var(--swatch-secondary));
     position: relative;
 }
