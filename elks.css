@@ -591,13 +591,12 @@ a.open#close-menu {
 
     :root {
         --top-bar-height: max(3em, 6vh);
-        --body-font-size: 1.2rem;
     }
 }
 
 @media (max-width: 500px) {
     :root {
-        --body-font-size: 1.4rem;
+        --body-font-size: 1.2rem;
     }
 }
 
