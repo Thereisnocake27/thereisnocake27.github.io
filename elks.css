@@ -16,7 +16,7 @@
     --font-body: 'Open Sans';
     --font-informal: 'Yesteryear';
 
-    --top-bar-height: max(2.5em, 6vh);
+    --top-bar-height: max(2.5em, 2vw);
     --side-bar-item-height: 2em;
 
     --top-bar-dropdown-item-height: --top-bar-height;
@@ -582,7 +582,7 @@ a.open#close-menu {
     }
 
     :root {
-        --top-bar-height: max(3em, 4vh);
+        --top-bar-height: max(3em, 6vh);
         --body-font-size: 1.2rem;
     }
     #top-bar > ul > li {
