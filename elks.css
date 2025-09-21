@@ -175,7 +175,7 @@ header a:hover {
     right: 0;
     top: 100%;
     width: 100%;
-    min-width: 16rem;
+    min-width: 20rem;
     list-style: none;
     clip-path: inset(0 0 0 100%);
     transition: clip-path ease-in 0.1s 0.2s;
