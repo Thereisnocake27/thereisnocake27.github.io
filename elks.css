@@ -16,7 +16,7 @@
     --font-body: 'Open Sans';
     --font-informal: 'Yesteryear';
 
-    --top-bar-height: max(2.5em, 2vw);
+    --top-bar-height: max(2.5em, 4vh);
     --side-bar-item-height: 2em;
 
     --top-bar-dropdown-item-height: --top-bar-height;
@@ -107,11 +107,9 @@ header a:hover {
     width: 100%;
     height: var(--top-bar-height);
     background-color: rgb(var(--swatch-secondary));
-    padding: 0 var(--top-bar-height) 0 /0;
     box-sizing:border-box;
     z-index: 5;
     display: flex;
-    min-height: 4vh;
 }
 
 #top-bar > ul {
