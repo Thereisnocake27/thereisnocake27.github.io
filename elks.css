@@ -34,12 +34,12 @@
 body, html {
     height: 100%;
     overflow: auto;
+    scrollbar-color: rgb(var(--swatch-primary));
 }
 
 body {
     background-color: rgb(var(--swatch-body-variant));
     scrollbar-width: thin;
-    scrollbar-color: rgb(var(--swatch-primary));
     font-family: var(--font-body), Arial, Helvetica, sans-serif;
     color: rgb(var(--swatch-text));
     font-size: var(--body-font-size);
@@ -317,6 +317,7 @@ button#open-menu::before {
     max-width: 80vw;
     height: max-content;
     overflow-y: scroll;
+    scrollbar-color: rgb(var(--swatch-primary));
 }
 
 .open#side-bar {
