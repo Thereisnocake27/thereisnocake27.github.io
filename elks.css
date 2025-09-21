@@ -111,6 +111,7 @@ header a:hover {
     box-sizing:border-box;
     z-index: 5;
     display: flex;
+    min-height: 4vh;
 }
 
 #top-bar > ul {
