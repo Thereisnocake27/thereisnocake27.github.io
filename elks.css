@@ -289,11 +289,11 @@ button#open-menu::before {
     height: 100%;
     width: 100%;
     -webkit-mask-image: url("/MenuIcon.svg");
-    -webkit-mask-size: calc(var(--top-bar-height) * 0.6);
+    -webkit-mask-size: calc(var(--top-bar-height) * 0.8);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    mask-image: url("MenuIcon.svg");
-    mask-size: calc(var(--top-bar-height) * 0.6);
+    mask-image: url("/MenuIcon.svg");
+    mask-size: calc(var(--top-bar-height) * 0.8);
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: rgb(var(--swatch-text));
