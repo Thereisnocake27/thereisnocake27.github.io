@@ -34,7 +34,7 @@
 body, html {
     height: 100%;
     overflow: auto;
-    scrollbar-color: rgb(var(--swatch-primary));
+    scrollbar-color: rgb(var(--swatch-primary)) rgb(var(--swatch-difference));
 }
 
 body {
@@ -317,7 +317,7 @@ button#open-menu::before {
     max-width: 80vw;
     height: max-content;
     overflow-y: scroll;
-    scrollbar-color: rgb(var(--swatch-primary));
+    scrollbar-color: rgb(var(--swatch-primary)) rgb(var(--swatch-difference));
 }
 
 .open#side-bar {
