@@ -581,12 +581,12 @@ a.open#close-menu {
     }
 
     :root {
-        --top-bar-height: max(3em, 2vw);
+        --top-bar-height: max(3em, 4vh);
         --body-font-size: 1.2rem;
     }
 
     #top-bar > ul > li {
-        font-size: 80%;
+        font-size: 100%;
     }
 }
 
