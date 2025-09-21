@@ -586,7 +586,7 @@ a.open#close-menu {
         --body-font-size: 1.2rem;
     }
     #top-bar > ul > li {
-        font-size: 100%;
+        font-size: 120%;
     }
     #top-bar {
         min-height: 4vh;
