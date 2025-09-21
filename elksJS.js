@@ -14,16 +14,6 @@
 
                 const topBar = document.getElementById("top-bar");
 
-
-                function load(url, element) {
-                    fetch(url).then(res => {
-                        element.innerHTML = res; 
-                    });
-                }
-
-
-                load("file:///C:/Users/trey/Desktop/Elks Website/top-bar.html", topBar);
-
                 menuButton.addEventListener("click", (event) => {
                     openMenu(sideBar);
                     openMenu(closeMenuButton);
@@ -33,4 +23,5 @@
                     closeMenu(sideBar);
                     closeMenu(closeMenuButton);
                 });
+
             });
