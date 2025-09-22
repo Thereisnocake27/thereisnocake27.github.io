@@ -4,11 +4,17 @@
 
 
 :root {
+    /*
     --swatch-primary: 59, 98, 85;
     --swatch-secondary: 105, 133, 121;
     --swatch-tertiary: 203, 222, 211;
+    */
+    --swatch-primary: 72, 59, 99;
+    --swatch-secondary: 115, 105, 134;
+    --swatch-tertiary: 209, 202, 222;
     --swatch-difference: 210, 196, 154;
-    --swatch-darker: 41, 64, 60; /*priamry but darker*/
+    /*--swatch-darker: 41, 64, 60; /*priamry but darker*/
+    --swatch-darker: 51, 41, 64;
     --swatch-body: 226, 223, 218;
     --swatch-body-variant: 241, 238, 233;
     --swatch-text: 26, 24, 24;
