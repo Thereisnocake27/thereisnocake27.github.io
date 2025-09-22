@@ -428,6 +428,7 @@ a.open#close-menu {
     min-height: var(--side-bar-item-height);
     background-color: rgb(var(--swatch-secondary));
     position: relative;
+    align-content: center;
 }
 
 #side-bar > ul > li + li {
