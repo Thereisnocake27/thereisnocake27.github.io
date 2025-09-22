@@ -107,6 +107,10 @@ header::before {
     flex-wrap: wrap;
 }
 
+#logo svg path {
+  transition: 0.1s ease-in;
+}
+
 #logo svg {
     max-height: 90%;
 }
