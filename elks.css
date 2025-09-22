@@ -419,6 +419,8 @@ a.open#close-menu {
     padding: 0.5em;
     box-sizing: border-box;
     align-content: center;
+    position: relative;
+    max-width: max-content;
 }
 
 .social-wrapper::before {
@@ -430,6 +432,22 @@ a.open#close-menu {
     mask-size: contain;
     mask-repeat: no-repeat;
     background-color: rgb(var(--swatch-primary));
+}
+
+.social-wrapper::after {
+  content:"";
+  background-color: rgb(var(--swatch-primary));
+  height: 3px;
+  width: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.15s ease-in 0.05s;
+}
+
+.social-wrapper:has(a:hover)::after {
+  width: 100%;
 }
 
 .social-media {
