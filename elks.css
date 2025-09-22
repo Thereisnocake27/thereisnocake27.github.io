@@ -480,11 +480,15 @@ a.open#close-menu {
     position: absolute;
     top: 0; left: 0;
     background-color: rgb(var(--swatch-primary));
-    transition: 0.1s ease-in 0.02s;
+    transition: width 0.1s ease-in 0.02s;
 }
 
 #side-bar ul li:hover::before {
     width: 100%;
+}
+
+#side-bar ul li:has(a:active)::before {
+    background-color: rgb(var(--swatch-secondary));
 }
 
 #side-bar .heading {
