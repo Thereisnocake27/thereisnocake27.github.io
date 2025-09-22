@@ -1,0 +1,15 @@
+:root {
+  --swatch-primary: 40, 49, 99;
+  --swatch-darker: none;
+  --swatch-secondary: 130, 39, 51;
+  --swatch-tertiary: var(--swatch-body);
+  --swatch-difference: var(--swatch-secondary);
+}
+
+#side-bar > ul > li + li {
+  border-color: rgb(var(--swatch-body));
+}
+
+footer a {
+  color: rgb(var(--swatch-body));
+}
