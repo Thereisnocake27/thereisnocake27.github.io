@@ -23,7 +23,7 @@
     --font-informal: 'Yesteryear';
 
     --top-bar-height: max(2.5em, 4vh);
-    --side-bar-item-height: 2em;
+    --side-bar-item-height: 2rem;
 
     --top-bar-dropdown-item-height: --top-bar-height;
 
@@ -463,7 +463,7 @@ a.open#close-menu {
 #side-bar ul li a {
     display: block;
     color: rgb(var(--swatch-body));
-    height: 100%;
+    height: var(--side-bar-item-height);
     width: 100%;
     max-width: 100%;
     font-size: 120%;
