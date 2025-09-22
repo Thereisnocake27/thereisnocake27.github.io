@@ -96,20 +96,35 @@ header::before {
     background-color: rgba(var(--swatch-darker), 0.5);
 }
 
-header a {
+#logo {
     height: 100%;
     aspect-ratio: 1;
     z-index: 1;
-    mask-image: url("/elks-club.svg");
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    background-color: rgb(var(--swatch-body));
     transition: 0.1s ease-in 0.05s;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-header a:hover {
-    background-color: rgb(var(--swatch-difference));
+#logo svg {
+    max-height: 90%;
+}
+
+#logo svg :is(#path2, #path3) {
+    fill: rgb(var(--swatch-difference))!important;
+}
+
+#logo svg :is(#path4, #path5, #path6, #path7) {
+    fill: rgb(var(--swatch-body))!important;
+}
+
+#logo svg:hover :is(#path4, #path5, #path6, #path7) {
+    fill: rgb(var(--swatch-difference))!important;
+}
+
+#logo svg:hover :is(#path2, #path3) {
+    fill: rgb(var(--swatch-body))!important;
 }
 
 #top-bar {
