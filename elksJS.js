@@ -1,5 +1,48 @@
-            const topBarContent = '<li> <a href="javascript:;">Top-bar item</a> </li> <li class="drop-mobile"> <a href="javascript:;">Top-bar item</a> </li> <li> <a href="javascript:;">Top-bar item</a> </li> <li class="drop-down"> <a href="javascript:;">Dropdown</a> <ul> <li> <a href="javascript:;">drop-down item</a> </li> <li> <a href="javascript:;">drop-down item</a> </li> <li> <a href="javascript:;">drop-down item</a> </li> <li> <a href="javascript:;">drop-down item</a> </li> </ul> </li>';
-            const sideBarContent = '<div id="side-bar-header"> <a href="/"></a> <div> <h1><a href="/">Elks 142</a></h1> <h2>Milwaukie-Portland</h2> </div> </div> <div class="social-wrapper"> <a class="social-media" href="https://www.facebook.com/p/Milwaukie-Portland-Elks-142-100070042659972"> Facebook </a> </div> <div class="heading"> heading </div> <ul> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> </ul> <div class="heading"> heading </div> <ul> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> <li> <a href="javascript:;">side-bar item</a> </li> </ul> <div class="heading"> Icons </div> <div class="big-item"> <a href="javascript:;"></a> <a href="javascript:;"></a> <a href="javascript:;"></a> <a href="javascript:;"></a> </div>';
+            const topBarContent = `
+<li> <a href="javascript:;">Top-bar item</a> </li>
+<li class="drop-mobile"> <a href="javascript:;">Top-bar item</a> </li>
+<li> <a href="javascript:;">Top-bar item</a> </li>
+<li class="drop-down">
+	<a href="javascript:;">Dropdown</a> 
+	<ul>
+		<li> <a href="javascript:;">drop-down item</a> </li>
+		<li> <a href="javascript:;">drop-down item</a> </li>
+		<li> <a href="javascript:;">drop-down item</a> </li>
+		<li> <a href="javascript:;">drop-down item</a> </li>
+	</ul>
+</li>`;
+            const sideBarContent = `
+            <div id="side-bar-header">
+	<a href="/"></a> 
+	<div>
+		<h1><a href="/">Elks 142</a></h1>
+		<h2>Milwaukie-Portland</h2>
+	</div>
+</div>
+<div class="social-wrapper"> <a class="social-media" href="https://www.facebook.com/p/Milwaukie-Portland-Elks-142-100070042659972"> Facebook </a> </div>
+<div class="heading"> heading </div>
+<ul>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+</ul>
+<div class="heading"> heading </div>
+<ul>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+	<li> <a href="javascript:;">side-bar item</a> </li>
+</ul>
+<div class="heading"> Icons </div>
+<div class="big-item"> <a href="javascript:;"></a> <a href="javascript:;"></a> <a href="javascript:;"></a> <a href="javascript:;"></a> </div>
+`;
 
             function openMenu(element) {
                 element.classList.add("open");
@@ -32,3 +75,4 @@
                     closeMenu(closeMenuButton);
                 });
             });
+
