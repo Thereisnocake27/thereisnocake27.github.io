@@ -421,6 +421,8 @@ a.open#close-menu {
     align-content: center;
     position: relative;
     max-width: max-content;
+    padding-left: 0;
+    left: 0.5em;
 }
 
 .social-wrapper::before {
