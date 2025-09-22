@@ -123,6 +123,7 @@ header::before {
     fill: rgb(var(--swatch-body))!important;
 }
 
+/*
 #logo svg:hover :is(#path4, #path5, #path6, #path7) {
     fill: rgb(var(--swatch-difference))!important;
 }
@@ -130,6 +131,7 @@ header::before {
 #logo svg:hover :is(#path2, #path3) {
     fill: rgb(var(--swatch-body))!important;
 }
+*/
 
 #top-bar {
     position: sticky;
