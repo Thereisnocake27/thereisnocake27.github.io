@@ -44,13 +44,21 @@
 <div class="big-item"> <a href="javascript:;"></a> <a href="javascript:;"></a> <a href="javascript:;"></a> <a href="javascript:;"></a> </div>
 `;
 
+function appendTheme(theme) {
+	var head = document.head;
+	var link = document.createElement("link");
+	link.rel = "stylesheet";
+	link.href = theme;
+	head.appendChild(link);
+};
+
             function openMenu(element) {
                 element.classList.add("open");
-            }
+            };
 
             function closeMenu(element) {
                 element.classList.remove("open");
-            }
+            };
 
 
             document.addEventListener("DOMContentLoaded", () => {
@@ -75,4 +83,5 @@
                     closeMenu(closeMenuButton);
                 });
             });
+
 
