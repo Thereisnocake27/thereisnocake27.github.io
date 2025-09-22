@@ -211,7 +211,7 @@ header a:hover {
 }
 
 #top-bar > ul > li > ul > li > a:hover {
-    background-color: rgba(var(--swatch-difference), 0.5);
+    background-color: rgba(var(--swatch-difference), 1);
 }
 
 #top-bar > ul > li > ul > li > a:active {
