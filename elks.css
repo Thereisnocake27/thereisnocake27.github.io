@@ -228,7 +228,6 @@ header::before {
     justify-content: center;
     width: 100%;
     min-height: var(--top-bar-height);
-    transition: all ease-out 0.1s;
 }
 
 #top-bar > ul > li > ul > li > a:hover {
