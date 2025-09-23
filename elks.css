@@ -116,20 +116,20 @@ header::before {
 }
 
 #logo svg :is(#path2, #path3) {
-    fill: rgb(var(--swatch-difference))!important;
+    fill: rgb(var(--swatch-difference));
 }
 
 #logo svg :is(#path4, #path5, #path6, #path7) {
-    fill: rgb(var(--swatch-body))!important;
+    fill: rgb(var(--swatch-body));
 }
 
 /*
 #logo svg:hover :is(#path4, #path5, #path6, #path7) {
-    fill: rgb(var(--swatch-difference))!important;
+    fill: rgb(var(--swatch-difference));
 }
 
 #logo svg:hover :is(#path2, #path3) {
-    fill: rgb(var(--swatch-body))!important;
+    fill: rgb(var(--swatch-body));
 }
 */
 
