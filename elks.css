@@ -111,7 +111,8 @@ header::before {
 }
 
 #logo svg {
-    max-height: 90%;
+    height: 90%;
+    width: 100%;
 }
 
 #logo svg :is(#path2, #path3) {
