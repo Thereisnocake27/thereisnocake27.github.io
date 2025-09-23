@@ -123,11 +123,11 @@ header::before {
     fill: rgb(var(--swatch-body));
 }
 
-/*
-#logo svg:hover :is(#path4, #path5, #path6, #path7) {
+
+#logo svg:hover :is(#path4 /*, #path5, #path6, #path7*/) {
     fill: rgb(var(--swatch-difference));
 }
-
+/*
 #logo svg:hover :is(#path2, #path3) {
     fill: rgb(var(--swatch-body));
 }
