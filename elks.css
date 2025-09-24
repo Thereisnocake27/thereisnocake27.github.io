@@ -587,6 +587,71 @@ a.open#close-menu {
     margin-left: 1em;
 }
 
+.inline-form {
+    display: flex;
+    max-width: 30em;
+    margin-top: 1em;
+}
+
+.form-header {
+    font-family: var(--font-header), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+    padding-bottom: 0.25em;
+}
+
+.inline-form :is(input, textarea):focus {
+    outline: solid 2px rgb(var(--swatch-primary));
+    border-color: rgb(var(--swatch-primary));
+}
+
+.inline-form :is(input, textarea) {
+    font-size: var(--body-font-size);
+    border-radius: 4px;
+    padding: 4px;
+    box-sizing: border-box;
+    border: solid 2px rgb(var(--swatch-secondary));
+    color: rgb(var(--swatch-text));
+    transition: 0.025s ease-in 0.05s;
+    background-color: rgb(var(--swatch-form-background))
+}
+
+.inline-form :is(input, textarea)::placeholder {
+    font-family: var(--font-header), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.email-name {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+}
+
+.page-input {
+    width: 48%;
+    height: 2em;
+}
+
+.message {
+    width: 100%;
+}
+
+.submit-button {
+    height: 2.5em;
+    font-size: var(--body-font-size);
+    font-family: var(--font-header), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    margin-top: 0.5em;
+    background-color: rgb(var(--swatch-secondary));
+    color: rgb(var(--swatch-form-background));
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition: 0.05s ease-in 0.05s;
+}
+
+.submit-button:hover {
+    background-color: rgb(var(--swatch-primary));
+}
+
 @media (max-width: 1150px) {
     div#side-bar {
         clip-path: inset(0 100% 0 0);
