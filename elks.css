@@ -538,7 +538,7 @@ a.open#close-menu {
     height: calc(var(--side-bar-item-height) * 2);
     width: calc(var(--side-bar-item-height) * 2);
     max-width: 20vw;
-    mask-image: url('/placeholdericon.svg');
+    mask-image: url('/assets/placeholdericon.svg');
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
