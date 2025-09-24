@@ -67,7 +67,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    mask-image: url(/herringbone.svg);
+    mask-image: url("/assets/herringbone.svg");
     mask-size: 80em;
     background-color: rgba(var(--swatch-body), 1);
     z-index: -1;
@@ -90,7 +90,7 @@ header::before {
     left: 0;
     height: 100%;
     width: 100%;
-    mask-image: url("/herringbone.svg");
+    mask-image: url("/assets/herringbone.svg");
     mask-size: 80em;
     background-color: rgba(var(--swatch-darker), 0.5);
 }
@@ -314,11 +314,11 @@ button#open-menu::before {
     display: block;
     height: 100%;
     width: 100%;
-    -webkit-mask-image: url("/MenuIcon.svg");
+    -webkit-mask-image: url("/assets/MenuIcon.svg");
     -webkit-mask-size: calc(var(--top-bar-height) * 0.8);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    mask-image: url("/MenuIcon.svg");
+    mask-image: url("/assets/MenuIcon.svg");
     mask-size: calc(var(--top-bar-height) * 0.8);
     mask-repeat: no-repeat;
     mask-position: center;
@@ -391,7 +391,7 @@ a.open#close-menu {
     align-self: center;
     aspect-ratio: 1;
     z-index: 1;
-    mask-image: url("/elks-logo.svg");
+    mask-image: url("/assets/elks-logo.svg");
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -429,7 +429,7 @@ a.open#close-menu {
     display: block;
     height: 2em;
     width: 2em;
-    mask-image: url("/facebook.svg");
+    mask-image: url("/assets/facebook.svg");
     mask-size: contain;
     mask-repeat: no-repeat;
     background-color: rgb(var(--swatch-primary));
