@@ -143,7 +143,7 @@ header::before {
     height: var(--top-bar-height);
     background-color: rgb(var(--swatch-secondary));
     box-sizing:border-box;
-    z-index: 5;
+    z-index: 3;
     display: flex;
 }
 
@@ -355,13 +355,13 @@ a#close-menu {
     display: none;
     opacity: 0;
     height: 100%;
-    height: 100;
+    height: 100lvh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: rgb(var(--swatch-text));
-    z-index: 3;
+    z-index: 5;
     transition: opacity 0.5s ease-in;
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
