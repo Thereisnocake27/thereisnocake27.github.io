@@ -363,7 +363,7 @@ a#close-menu {
     z-index: 5;
     transition: opacity 0.5s ease-in;
     -webkit-backdrop-filter: blur(2px) brightness(0.4);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px) brightness(0.4);
 }
 
 a.open#close-menu {
