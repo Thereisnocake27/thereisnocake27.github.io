@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url(photoEssay.css);
+        </style>
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const flashlight = document.getElementById("flashlight");
+            document.body.onpointermove = event => {
+              const { clientX, clientY } = event;
+    
+              flashlight.style.background = `radial-gradient(circle at left ${clientX}px top ${clientY}px, #ffffff15, transparent 200px)`;
+            };
+          });
+            
+
+        </script>
+    </head>
+    <body>
+        <header>
+            depths
+        </header>
+        <div id="container">
+            <div class="image-block">
+                <img src="IMG_5371.jpg">
+                <div class="caption">
+                  <h1>Overture</h1>
+                  <p>
+                    In all honesty I was dreading this class.
+                  </p>
+                </div>
+            </div>
+            <div class="image-block">
+                <img src="landscape.jpg">
+                <div class="caption">
+                    caption
+                </div>
+            </div>
+            <div class="image-block">
+                <img src="in the distance.jpg">
+                <div class="caption">
+                  <h1>Bridge</h1>
+                    caption
+                </div>
+            </div>
+            <div class="image-block">
+                <img src="foggypath.jpg">
+                <div class="caption">
+                    caption
+                </div>
+            </div>
+            <div class="image-block">
+                <img src="pillar.jpg">
+                <div class="caption">
+                  <h1>Finale</h1>
+                    caption
+                </div>
+            </div>
+        </div>
+        <div id="flashlight"></div>
+        <footer>
+            footer stuff
+        </footer>
+    </body>
+</html>
