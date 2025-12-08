@@ -247,7 +247,8 @@ footer::after {
   display: block;
   height: 1px;
   flex-grow: 1;
-  margin: 0 2rem;
+  margin-left: 2rem;
   background-color: white;
 }
+
 
