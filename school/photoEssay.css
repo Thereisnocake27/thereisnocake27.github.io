@@ -30,7 +30,7 @@ body::after {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url(Texturelabs_Atmosphere_203M.jpg);
+    background: url(/school/assets/Texturelabs_Atmosphere_203M.jpg);
     z-index: -5;
     opacity: 0.05;
     background-size: cover;
@@ -229,4 +229,5 @@ h1 {
 
 body:hover #flashlight {
     display: block;
+
 }
