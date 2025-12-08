@@ -236,4 +236,18 @@ body:hover #flashlight {
     max-width: 80%;
 }
 
+footer {
+  display: flex;
+  padding: 0 2rem;
+  align-items: center;
+}
+
+footer::after {
+  content: "";
+  display: block;
+  height: 1px;
+  flex-grow: 1;
+  margin: 0 2rem;
+  background-color: white;
+}
 
