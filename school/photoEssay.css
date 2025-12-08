@@ -239,10 +239,11 @@ body:hover #flashlight {
 
 footer {
   display: flex;
-  padding: 0 2rem;
+  padding: 0.8rem 2rem;
   align-items: center;
   margin-top: 6rem;
 }
+
 
 
 
