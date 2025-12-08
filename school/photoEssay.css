@@ -240,15 +240,8 @@ footer {
   display: flex;
   padding: 0 2rem;
   align-items: center;
+  margin-top: 6rem;
 }
 
-footer::after {
-  content: "";
-  display: block;
-  height: 1px;
-  flex-grow: 1;
-  margin-left: 2rem;
-  background-color: white;
-}
 
 
