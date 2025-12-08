@@ -21,6 +21,7 @@ body {
     position: relative;
     background-image: linear-gradient(to bottom, #050509, #111115);
     font-family: var(--font-body);
+    line-height: 1.6;
 }
 
 body::after {
@@ -242,6 +243,7 @@ footer {
   align-items: center;
   margin-top: 6rem;
 }
+
 
 
 
