@@ -223,7 +223,7 @@ h1 {
     left: 0;
     top: 0;
     pointer-events: none;
-    z-index: -1;
+    z-index: -6;
     display: none;
 }
 
@@ -231,3 +231,4 @@ body:hover #flashlight {
     display: block;
 
 }
+
