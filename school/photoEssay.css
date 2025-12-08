@@ -97,7 +97,7 @@ h1 {
 
 .image-block {
     width: 90%;
-    margin: 1rem auto;
+    margin: 2rem auto;
     position: relative;
     overflow: hidden;
 }
@@ -235,4 +235,5 @@ body:hover #flashlight {
 .text {
     max-width: 80%;
 }
+
 
