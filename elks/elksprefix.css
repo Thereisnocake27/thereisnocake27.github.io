@@ -69,6 +69,21 @@ body::before {
     min-height: 100%;
 }
 
+.skip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: max-content;
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.skip:focus {
+  opacity: 1;
+}
+
 header {
     width: 100%;
     height: calc(10em + 5vw);
