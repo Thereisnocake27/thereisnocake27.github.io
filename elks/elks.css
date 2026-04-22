@@ -383,7 +383,7 @@ a#close-menu {
 
 a.open#close-menu {
     display: block;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 #side-bar-header {
