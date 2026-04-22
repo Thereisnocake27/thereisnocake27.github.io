@@ -38,11 +38,15 @@
     text-decoration: none;
 }
 
+[id] {
+  scroll-margin-top: var(--top-bar-height);
+}
 
 body, html {
     height: 100%;
     overflow: auto;
     scrollbar-color: rgb(var(--swatch-primary)) rgb(var(--swatch-body));
+    scroll-behavior: smooth;
 }
 
 body {
