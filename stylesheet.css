@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "BVLLET";
+    src: url(/fonts/BVLLET.ttf);
+}
+
+@font-face {
+    font-family: "J Audio Cassette";
+    src: url("/fonts/J\ Audio\ Cassette.otf");
+}
+
+@font-face {
+    font-family: "Spline Sans";
+    src: url("/fonts/SplineSans-Regular.otf");
+}
+
+@font-face {
+    font-family: "Spline Sans SemiBold";
+    src: url("/fonts/SplineSans-SemiBold.otf");
+}
+
+:root {
+    /* fonts */
+    --font-display: "J Audio Cassette",sans-serif;
+    --font-body: "Spline Sans", sans-serif;
+    --font-body-semibold: "Spline Sans SemiBold", sans-serif;
+    
+    /* colors */
+    --white: 250, 250, 230;
+    --orange: 250, 78, 51;
+    --yellow: 247, 185, 0;
+    --red: 237, 36, 73;
+    --pink: 198, 32, 95;
+    --purple: 130, 53, 113;
+
+    --black: 8, 2, 3;
+
+    /* utility */
+
+    --body-font-size: 1.2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    color: rgb(var(--black));
+    font-family: var(--font-body);
+    font-size: var(--body-font-size);
+    background-color: rgb(var(--white));
+    background-image:
+    /*
+        linear-gradient(
+            -135deg,
+            transparent 5rem,
+            rgb(var(--yellow)) calc(5rem + 1px),
+            rgb(var(--yellow)) 7rem,
+            rgb(var(--orange)) calc(7rem + 1px),
+            rgb(var(--orange)) 9rem,
+            rgb(var(--red)) calc(9rem + 1px),
+            rgb(var(--red)) 11rem,
+            rgb(var(--pink)) calc(11rem + 1px),
+            rgb(var(--pink)) 13rem,
+            rgb(var(--purple)) calc(13rem + 1px),
+            rgb(var(--purple)) 15rem,
+            transparent calc(15rem + 1px)
+        )
+        */
+        linear-gradient(
+            -135deg,
+            transparent 2%,
+            rgb(var(--yellow)) calc(2% + 1px),
+            rgb(var(--yellow)) 4%,
+            rgb(var(--orange)) calc(4% + 1px),
+            rgb(var(--orange)) 6%,
+            rgb(var(--red)) calc(6% + 1px),
+            rgb(var(--red)) 8%,
+            rgb(var(--pink)) calc(8% + 1px),
+            rgb(var(--pink)) 10%,
+            rgb(var(--purple)) calc(10% + 1px),
+            rgb(var(--purple)) 12%,
+            transparent calc(12% + 1px)
+        );
+}
+
+.title {
+    font-family: var(--font-display), sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin: 1rem 1rem;
+    position: relative;
+    max-width: max-content;
+    width: 100%;
+    overflow-wrap: anywhere;
+    text-wrap: wrap;
+}
+
+.title::first-letter {
+    font-size: 150%;
+    font-weight: lighter;
+    background-image:
+        linear-gradient(
+            135deg,
+            rgb(var(--yellow)),
+            rgb(var(--orange)) 88%,
+            transparent 89%
+        );
+}
+
+.container {
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 56rem;
+    position: relative;
+}
+
+.container p {
+    margin: 1rem 0;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.quote {
+    font-size: 130%;
+    font-family: var(--font-body-semibold);
+    max-width: max-content;
+    width: 100%;
+}
+
+.quote .author {
+    font-size: var(--body-font-size);
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-style: italic;
+}
+
+.quote .author::first-letter {
+    font-size: 120%;
+    background-color: rgb(var(--yellow));
+    padding-right: 0.25rem;
+    margin-right: -0.25rem;
+
+}
+
+strong {
+    font-family: var(--font-body-semibold);
+}
+
+.letter::first-letter {
+    initial-letter: 2;
+}
+
+.container a {
+    color: rgb(var(--black));
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.container a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(
+            -45deg,
+            rgb(var(--yellow)),
+            rgb(var(--yellow)) 20%,
+            rgb(var(--orange)) calc(20% + 1px),
+            rgb(var(--orange)) 40%,
+            rgb(var(--red)) calc(40% + 1px),
+            rgb(var(--red)) 60%,
+            rgb(var(--pink)) calc(60% + 1px),
+            rgb(var(--pink)) 80%,
+            rgb(var(--purple)) calc(80% + 1px),
+            rgb(var(--purple))
+        );
+}
