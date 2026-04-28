@@ -162,9 +162,10 @@ strong {
     text-decoration: none;
     position: relative;
     display: inline-block;
+    z-index: 1;
 }
 
-.container a::before {
+.container a::before, .project-block h3::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -184,4 +185,66 @@ strong {
             rgb(var(--purple)) calc(80% + 1px),
             rgb(var(--purple))
         );
+    z-index: -1;
+}
+
+.block-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 8rem;
+    gap: 1rem;
+}
+
+.project-block {
+    background-color: rgb(var(--white));
+    background-image: linear-gradient(
+            -135deg,
+            transparent 2%,
+            rgb(var(--yellow)) calc(2% + 1px),
+            rgb(var(--yellow)) 4%,
+            rgb(var(--orange)) calc(4% + 1px),
+            rgb(var(--orange)) 6%,
+            rgb(var(--red)) calc(6% + 1px),
+            rgb(var(--red)) 8%,
+            rgb(var(--pink)) calc(8% + 1px),
+            rgb(var(--pink)) 10%,
+            rgb(var(--purple)) calc(10% + 1px),
+            rgb(var(--purple)) 12%,
+            transparent calc(12% + 1px)
+        );
+    border-radius: 0.8rem;
+    box-shadow: 0 0 0.4rem 3px rgba(var(--black), 0.05);
+    transition: 0.1s ease-in-out 0.05s;
+}
+
+.project-block a::before {
+    content: unset;
+}
+
+.project-block a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 0.5rem 0.8rem;
+    box-sizing: border-box;
+}
+
+.project-block h3 {
+    font-size: 120%;
+    font-family: var(--font-body-semibold);
+    font-weight: normal;
+    position: relative;
+    width: max-content;
+}
+.project-block a h3::before {
+    display: none;
+}
+
+.project-block a:hover h3::before {
+    display: block;
+}
+
+
+.project-block:hover {
+    transform: rotate(-1deg) scale(1.01);
 }
